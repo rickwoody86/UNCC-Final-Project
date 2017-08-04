@@ -157,14 +157,23 @@ blockquote.large {
 	line-height:1.1em;
 }
 blockquote.large:before {
-	font-size:64px;
+	font-size:50px;
 	font-family: FontAwesome;
 	content: "\f10d";
+	margin-right:2px;
+
+}
+
+blockquote.large:after {
+	font-size:50px;
+	font-family: FontAwesome;
+	content: "\f10e";
 	margin-right:20px;
 }
 
 blockquote cite 						{ display:block; font-size:12px;}
 blockquote cite:before 					{ content:"\2014 \0020"; }
+blockquote cite:after 					{ content:"\2014 \0020"; }
 blockquote cite a,
 blockquote cite a:visited,
 blockquote cite a:visited 				{ color:#555; }
@@ -510,6 +519,11 @@ section.spacer.bg3 {
 }
 
 section.spacer blockquote.large:before {
+	color:#eee;
+	opacity:0.6;
+}
+
+section.spacer blockquote.large:after {
 	color:#eee;
 	opacity:0.6;
 }
