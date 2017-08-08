@@ -11,6 +11,14 @@
 <link href="color/default.css" rel="stylesheet">
 <link rel="shortcut icon" href="img/pennybank.jpg">
 <link rel="stylesheet" href="css/animate.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <body>
 <!-- navbar -->
 <div class="navbar-wrapper">
@@ -20,12 +28,11 @@
 				<!-- Responsive navbar -->
 				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 				</a>
-				<h6 class="brand" id="brand"><a href="bullentin.html"><img id="logonav" src="img/pennybank.png" alt="" />Bullentin Board</a></h6>
+				<h6 class="brand" id="brand"><a href="bullentin.html"><img id="logonav" src="img/pennybank.png">Bullentin Board</a></h6>
 				<!-- navigation -->
-				<nav class="pull-right nav-collapse collapse">
+				<nav class="pull-right nav-collapse">
 				<ul id="menu-main" class="nav">
-					
-					<li><a title="login" href="index.html">Log out</a></li>
+					<li><a title="logout" href="index.html">Log out</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -33,10 +40,52 @@
 	</div>
 </div>
 <!-- Header area -->
+<section id="parent-wrapper" class="section">
+<div class="container parent-header">
+    <div class="row">
+        <div class="col-sm-12">
+            <legend class="animated flipInX">Family Info:</legend>
+        </div>
+        <!-- panel preview -->
+        <div class="col-sm-5">
+            <h4 class="animated infinite flash">Add Family:</h4>
+            <div class="panel panel-default alignleft">
+                <div class="panel-body form-horizontal payment-form">
+                    <div class="form-group">
+                        <label for="familyName" class="col-sm-3 control-label form-text">Family Name</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="familyName" name="familyName">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="col-sm-3 control-label form-text">Email</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="email" name="email">
+                        </div>
+                    </div> 
+                    
+                    <div class="form-group">
+                        <label for="date" class="col-sm-3 control-label form-text">Date</label>
+                        <div class="col-sm-9">
+                            <input type="date" class="form-control" id="date" name="ate">
+                        </div>
+                    </div> 
+                     
+                    <div class="form-group">
+                        <div class="col-sm-12 text-right">
+                            <button type="button" class="btn btn-default preview-add-button">
+                                <span class="glyphicon glyphicon-plus"></span> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div> <!-- / panel preview -->
+
 <div class="container parent-header">
 	<div class="row">
         <div class="col-sm-12">
-            <legend class="animated flipInX">The Blank Family:</legend>
+            <legend class="animated flipInX">Chores:</legend>
         </div>
         <!-- panel preview -->
         <div class="col-sm-5">
@@ -44,38 +93,39 @@
             <div class="panel panel-default alignleft">
                 <div class="panel-body form-horizontal payment-form">
                     <div class="form-group">
-                        <label for="concept" class="col-sm-3 control-label">Chore</label>
+                        <label for="chore" class="col-sm-3 control-label form-text">Chore</label>
                         <div class="col-sm-9">
-                            <input type="text" class="form-control" id="concept" name="chore">
+                            <input type="text" class="form-control" id="chore" name="title">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="description" class="col-sm-3 control-label">Description</label>
+                        <label for="description" class="col-sm-3 control-label form-text">Description</label>
                         <div class="col-sm-9">
                             <input type="text" class="form-control" id="description" name="description">
                         </div>
                     </div> 
                     <div class="form-group">
-                        <label for="amount" class="col-sm-3 control-label">Amount</label>
+                        <label for="amount" class="col-sm-3 control-label form-text">Amount</label>
                         <div class="col-sm-9">
-                            <input type="number" class="form-control" id="amount" name="amount">
+                            <input type="number" class="form-control" id="amount" name="choreAmount">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="status" class="col-sm-3 control-label">Status</label>
+                        <label for="status" class="col-sm-3 control-label form-text">Status</label>
                         <div class="col-sm-9">
-                            <select class="form-control" id="status" name="status">
+                            <select class="form-control" id="status" name="isComplete">
                                 <option>Not Completed</option>
                                 <option>Completed</option>
                             </select>
                         </div>
                     </div> 
                     <div class="form-group">
-                        <label for="date" class="col-sm-3 control-label">Date</label>
+                        <label for="date" class="col-sm-3 control-label form-text">End Date</label>
                         <div class="col-sm-9">
-                            <input type="date" class="form-control" id="date" name="date">
+                            <input type="date" class="form-control" id="date" name="endDate">
                         </div>
-                    </div>   
+                    </div> 
+                     
                     <div class="form-group">
                         <div class="col-sm-12 text-right">
                             <button type="button" class="btn btn-default preview-add-button">
@@ -98,7 +148,8 @@
                                     <th>Description</th>
                                     <th>Amount</th>
                                     <th>Status</th>
-                                    <th>Date</th>
+                                    <th>End Date</th>
+                                    
                                 </tr>
                             </thead>
                             <tbody></tbody> <!-- preview content goes here-->
@@ -108,7 +159,7 @@
             </div>
             <div class="row text-right">
                 <div class="col-xs-12">
-                    <h4>Total: <strong><span class="preview-total"></span></strong></h4>
+                    <h4>Total: $<strong><span class="preview-total"></span></strong></h4>
                 </div>
             </div>
             <div class="row">
@@ -120,8 +171,8 @@
         </div>
 	</div>
 </div>
-		
-
+	
+</section>
 
 
 <footer>

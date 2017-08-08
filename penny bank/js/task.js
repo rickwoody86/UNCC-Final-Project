@@ -16,11 +16,11 @@ $(document).on('click', '.input-remove-row', function(){
 $(function(){
     $('.preview-add-button').click(function(){
         var form_data = {};
-        form_data["chore"] = $('.payment-form input[name="concept"]').val();
+        form_data["chore"] = $('.payment-form input[name="title"]').val();
         form_data["description"] = $('.payment-form input[name="description"]').val();
-        form_data["amount"] = parseFloat($('.payment-form input[name="amount"]').val()).toFixed(2);
+        form_data["amount"] = parseFloat($('.payment-form input[name="choreAmount"]').val()).toFixed(2);
         form_data["status"] = $('.payment-form #status option:selected').text();
-        form_data["date"] = $('.payment-form input[name="date"]').val();
+        form_data["date"] = $('.payment-form input[name="endDate"]').val();
         form_data["remove-row"] = '<span class="glyphicon glyphicon-remove"></span>';
         var row = $('<tr></tr>');
         $.each(form_data, function( type, value ) {
