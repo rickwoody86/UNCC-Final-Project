@@ -9,7 +9,16 @@
 <link href="css/bootstrap-responsive.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
 <link href="color/default.css" rel="stylesheet">
-<link rel="shortcut icon" href="img/pennybank.jpg"
+<link rel="shortcut icon" href="img/pennybank.jpg">
+<link rel="stylesheet" href="css/animate.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <body>
 <!-- navbar -->
 <div class="navbar-wrapper">
@@ -19,12 +28,11 @@
 				<!-- Responsive navbar -->
 				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 				</a>
-				<h1 class="brand" id="brand"><a href="index.html">Penny Bank</a></h1>
+				<h6 class="brand" id="brand"><a href="bullentin.html"><img id="logonav" src="img/pennybank.png">Bullentin Board</a></h6>
 				<!-- navigation -->
-				<nav class="pull-right nav-collapse collapse">
+				<nav class="pull-right nav-collapse">
 				<ul id="menu-main" class="nav">
-					<li><a title="about" href="#about">About</a></li>
-					<li><a title="login" href="#login">Log In</a></li>
+					<li><a title="logout" href="index.html">Log out</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -32,80 +40,140 @@
 	</div>
 </div>
 <!-- Header area -->
-<div id="header-wrapper" class="header-slider">
-	<header class="clearfix">
-	<div class="logo">
-		<img id="logo" src="img/pennybank.png" alt="" />
-	</div>
-	<div class="container">
-		<div class="row">
-			<div class="span12">
-				<div id="main-flexslider" class="flexslider">
-					<ul class="slides">
-						<li>
-						<p class="home-slide-content">
-							<strong>Chores</strong> and Housework
-						</p>
-						</li>
-						<li>
-						<p class="home-slide-content">
-							Grades and <strong>School</strong>
-						</p>
-						</li>
-						<li>
-						<p class="home-slide-content">
-							Rewards of <strong>Responsibilty</strong>
-						</p>
-						</li>
-					</ul>
-				</div>
-				<!-- end slider -->
-			</div>
-		</div>
-	</div>
-	</header>
-</div>
-<!-- spacer section -->
-<section class="spacer green">
-<div class="container">
+<section id="parent-wrapper" class="section">
+<div class="container parent-header">
+    <div class="row">
+        <div class="col-sm-12">
+            <legend class="animated flipInX">Family Info:</legend>
+        </div>
+        <!-- panel preview -->
+        <div class="col-sm-5">
+            <h4 class="animated infinite flash">Add Family:</h4>
+            <div class="panel panel-default alignleft">
+                <div class="panel-body form-horizontal payment-form">
+                    <div class="form-group">
+                        <label for="familyName" class="col-sm-3 control-label form-text">Family Name</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="familyName" name="familyName">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="col-sm-3 control-label form-text">Email</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="email" name="email">
+                        </div>
+                    </div> 
+                    
+                    <div class="form-group">
+                        <label for="date" class="col-sm-3 control-label form-text">Date</label>
+                        <div class="col-sm-9">
+                            <input type="date" class="form-control" id="date" name="ate">
+                        </div>
+                    </div> 
+                     
+                    <div class="form-group">
+                        <div class="col-sm-12 text-right">
+                            <button type="button" class="btn btn-default preview-add-button">
+                                <span class="glyphicon glyphicon-plus"></span> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div> <!-- / panel preview -->
+
+<div class="container parent-header">
 	<div class="row">
-		<div class="span6 alignright flyLeft">
-			<blockquote class="large">
-				 The safest way to double your money is to fold it over and put it in your pocket. 
-			</blockquote>
-			<cite> -Kin Hubbard</cite>
-		</div>
-		<div class="span6 aligncenter flyRight">
-			<i class="icon-money icon-10x"></i>
-		</div>
+        <div class="col-sm-12">
+            <legend class="animated flipInX">Chores:</legend>
+        </div>
+        <!-- panel preview -->
+        <div class="col-sm-5">
+            <h4 class="animated infinite flash">Add Chore:</h4>
+            <div class="panel panel-default alignleft">
+                <div class="panel-body form-horizontal payment-form">
+                    <div class="form-group">
+                        <label for="chore" class="col-sm-3 control-label form-text">Chore</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="chore" name="title">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="description" class="col-sm-3 control-label form-text">Description</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="description" name="description">
+                        </div>
+                    </div> 
+                    <div class="form-group">
+                        <label for="amount" class="col-sm-3 control-label form-text">Amount</label>
+                        <div class="col-sm-9">
+                            <input type="number" class="form-control" id="amount" name="choreAmount">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="status" class="col-sm-3 control-label form-text">Status</label>
+                        <div class="col-sm-9">
+                            <select class="form-control" id="status" name="isComplete">
+                                <option>Not Completed</option>
+                                <option>Completed</option>
+                            </select>
+                        </div>
+                    </div> 
+                    <div class="form-group">
+                        <label for="date" class="col-sm-3 control-label form-text">End Date</label>
+                        <div class="col-sm-9">
+                            <input type="date" class="form-control" id="date" name="endDate">
+                        </div>
+                    </div> 
+                     
+                    <div class="form-group">
+                        <div class="col-sm-12 text-right">
+                            <button type="button" class="btn btn-default preview-add-button">
+                                <span class="glyphicon glyphicon-plus"></span> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div> <!-- / panel preview -->
+        <div class="col-sm-7">
+            <h4 class="animated-slow flash">Dashboard:</h4>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="table-responsive">
+                        <table class="table preview-table">
+                            <thead>
+                                <tr>
+                                    <th>Chore</th>
+                                    <th>Description</th>
+                                    <th>Amount</th>
+                                    <th>Status</th>
+                                    <th>End Date</th>
+                                    
+                                </tr>
+                            </thead>
+                            <tbody></tbody> <!-- preview content goes here-->
+                        </table>
+                    </div>                            
+                </div>
+            </div>
+            <div class="row text-right">
+                <div class="col-xs-12">
+                    <h4>Total: $<strong><span class="preview-total"></span></strong></h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <hr style="border:1px dashed #dddddd;">
+                    <button type="button" class="btn btn-primary btn-block">Submit all and finish</button>
+                </div>                
+            </div>
+        </div>
 	</div>
 </div>
-</section>
-<!-- end spacer section -->
-<!-- section: about -->
-<section id="about" class="section">
-<div class="container">
-	<h4>What is Penny Bank?</h4>
-	<div class="row">
-		<div class="span4 offset1">
-			<div>
-				<h2>Delegate and <strong>Educate</strong></h2>
-				<p>
-					Something about the app
-				</p>
-			</div>
-		</div>
-		<div class="span6">
-			<div class="aligncenter">
-				<!-- <img src="img/icons/creativity.png" alt="" /> -->
-			</div>
-		</div>
-	</div>
 	
-</div>
-<!-- /.container -->
 </section>
-<!-- end section: team -->
+
 
 <footer>
 <div class="container">
@@ -133,6 +201,7 @@
 <script src="js/inview.js"></script>
 <script src="js/animate.js"></script>
 <script src="js/custom.js"></script>
+<script src="js/task.js"></script>
 
 
 </body>
