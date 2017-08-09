@@ -1,0 +1,26 @@
+.app{
+	width: 100%;
+	margin: 0 auto;
+	border: 5px solid #1e1e1e;
+	font-family: 'Prompt', sans-serif;
+	font-color: #e1e1e1;
+	box-shadow: 10px 10px 5px black;
+	border-radius: 5px;
+}
+.users{
+	float : right;
+	margin-right: 1.5em;
+}
+.messages {
+	width: 100%;
+	margin: 1em;
+	border : 5px solid #1e1e1e;
+	padding: 1em;
+	font-family: 'Prompt', sans-serif;
+	font-color: #e1e1e1;
+	border-radius: 5px;
+}
+.message_form,
+.change_name_form{
+	padding: 1em;
+}

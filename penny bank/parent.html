@@ -41,46 +41,7 @@
 </div>
 <!-- Header area -->
 <section id="parent-wrapper" class="section">
-<div class="container parent-header">
-    <div class="row">
-        <div class="col-sm-12">
-            <legend class="animated flipInX">Family Info:</legend>
-        </div>
-        <!-- panel preview -->
-        <div class="col-sm-5">
-            <h4 class="animated infinite flash">Add Family:</h4>
-            <div class="panel panel-default alignleft">
-                <div class="panel-body form-horizontal payment-form">
-                    <div class="form-group">
-                        <label for="familyName" class="col-sm-3 control-label form-text">Family Name</label>
-                        <div class="col-sm-9">
-                            <input type="text" class="form-control" id="familyName" name="familyName">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="email" class="col-sm-3 control-label form-text">Email</label>
-                        <div class="col-sm-9">
-                            <input type="text" class="form-control" id="email" name="email">
-                        </div>
-                    </div> 
-                    
-                    <div class="form-group">
-                        <label for="date" class="col-sm-3 control-label form-text">Date</label>
-                        <div class="col-sm-9">
-                            <input type="date" class="form-control" id="date" name="ate">
-                        </div>
-                    </div> 
-                     
-                    <div class="form-group">
-                        <div class="col-sm-12 text-right">
-                            <button type="button" class="btn btn-default preview-add-button">
-                                <span class="glyphicon glyphicon-plus"></span> Add
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>            
-        </div> <!-- / panel preview -->
+
 
 <div class="container parent-header">
 	<div class="row">
@@ -171,7 +132,151 @@
         </div>
 	</div>
 </div>
-	
+<div class="container parent-header">
+    <div class="row">
+        <div class="col-sm-12">
+            <legend class="animated flipInX">Family Info:</legend>
+        </div>
+        <!-- panel preview -->
+        <div class="col-sm-4">
+        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#family">Add Family</button>
+  <div id="family" class="collapse">
+ 
+
+            <h4 class="animated infinite flash">Add Family:</h4>
+            <div class="panel panel-default alignleft">
+                <div class="panel-body form-horizontal payment-form">
+                    <div class="form-group">
+                        <label for="familyName" class="col-sm-3 control-label form-text">Family Name</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="familyName" name="familyName">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="col-sm-3 control-label form-text">Email</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="email" name="email">
+                        </div>
+                    </div> 
+                    
+                    <div class="form-group">
+                        <label for="date" class="col-sm-3 control-label form-text">Date</label>
+                        <div class="col-sm-9">
+                            <input type="date" class="form-control" id="date" name="date">
+                        </div>
+                    </div> 
+                     
+                    <div class="form-group">
+                        <div class="col-sm-12 text-right">
+                            <button type="button" class="btn btn-default preview-add-button">
+                                <span class="glyphicon glyphicon-plus"></span> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div> 
+          </div><!-- / panel preview -->
+        <div class="col-sm-4">
+          <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#parent">Add Parent</button>
+  <div id="parent" class="collapse">
+            <h4 class="animated infinite flash">Add Parent:</h4>
+            <div class="panel panel-default alignleft">
+                <div class="panel-body form-horizontal payment-form">
+                    <div class="form-group">
+                        <label for="firstNameP" class="col-sm-3 control-label form-text">First Name</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="firstNameP" name="firstNameP">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastNameP" class="col-sm-3 control-label form-text">Last Name</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="lastNameP" name="lastNameP">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="nickNameP" class="col-sm-3 control-label form-text">Nick Name</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="nickNameP" name="nickNameP">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="col-sm-3 control-label form-text">Email</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="email" name="email">
+                        </div>
+                    </div> 
+                    
+                    <div class="form-group">
+                        <label for="birthDateP" class="col-sm-3 control-label form-text">Birth Date</label>
+                        <div class="col-sm-9">
+                            <input type="date" class="form-control" id="birthDateP" name="birthDateP">
+                        </div>
+                    </div> 
+                  
+                     
+                    <div class="form-group">
+                        <div class="col-sm-12 text-right">
+                            <button type="button" class="btn btn-default preview-add-button">
+                                <span class="glyphicon glyphicon-plus"></span> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div> <!-- / panel preview -->
+        </div>
+        <div class="col-sm-4">
+        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#kid">Add Kid</button>
+  <div id="kid" class="collapse">
+            <h4 class="animated infinite flash">Add Kid:</h4>
+            <div class="panel panel-default alignleft">
+                <div class="panel-body form-horizontal payment-form">
+                    <div class="form-group">
+                        <label for="firstNameK" class="col-sm-3 control-label form-text">First Name</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="firstNameK" name="firstNameK">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastNameK" class="col-sm-3 control-label form-text">Last Name</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="lastNameK" name="lastNameK">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="nickNameK" class="col-sm-3 control-label form-text">Nick Name</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="nickNameK" name="nickNameK">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="col-sm-3 control-label form-text">Email</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="emailK" name="emailK">
+                        </div>
+                    </div> 
+                    
+                    <div class="form-group">
+                        <label for="birthDateP" class="col-sm-3 control-label form-text">Birth Date</label>
+                        <div class="col-sm-9">
+                            <input type="date" class="form-control" id="birthDateK" name="birthDateK">
+                        </div>
+                    </div> 
+                  
+                     
+                    <div class="form-group">
+                        <div class="col-sm-12 text-right">
+                            <button type="button" class="btn btn-default preview-add-button">
+                                <span class="glyphicon glyphicon-plus"></span> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div> <!-- / panel preview -->
+	</div>
 </section>
 
 

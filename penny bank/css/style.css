@@ -1579,7 +1579,7 @@ i.icon-white {
 .btn-info:active,
 .btn-info.active,
 .btn-info.disabled,
-.btn-info[disabled] {
+.btn-infdisabled] {
   color: #ffffff;
   background: #6a9ad0;
   *background: #6a9ad0;
